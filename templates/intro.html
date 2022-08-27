@@ -1,0 +1,92 @@
+<html>
+	<head>
+	<title>Wind Energy Prediction</title>
+	<style>
+	
+		.header {	
+			top:0px;	
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background: #111d79;
+			color: white;
+			overflow: hidden;
+			padding-bottom: 30px;
+			font-size: 2.25vw;
+			width: 100%;
+			padding-left:0px;
+			text-align: center;
+			padding-top:20px;
+		}
+		.second{
+			top:80px;
+			bottom:0px;
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			padding: 0px;
+			width: 100%;
+			background-image:url({{url_for('static',filename='images/m123.gif')}}); 
+			background-repeat:no-repeat;
+			background-size: 45% 100%;
+		}
+		.inside{
+			top:80px;
+			bottom:0px;
+			margin:0px;
+			left: 45%;
+			right: 0%;
+			position: fixed;
+			padding-left: 40px;
+			padding-top:8%;
+			padding-right:40px;
+			background-color:rgb(105, 178, 208);
+			font-family:Georgia, serif;
+			color:black;
+			font-size:20px;
+			text-align:justify;
+			
+		}
+		.myButton{
+			  border: none;
+			  text-align: center;
+			  cursor: pointer;
+			  text-transform: uppercase;
+			  outline: none;
+			  overflow: hidden;
+			  color: #fff;
+			  font-weight: 700;
+			  font-size: 12px;
+			  background-color: #111d71;
+			  padding: 10px 15px;
+			  margin: 0 auto;
+			  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+		}
+	</style>
+	</head>
+	<body>
+	
+		<div class="header">Predicting The Energy Output Of Wind Turbine Based On Weather Condition</div>
+		<div class="second">
+			<div class="inside">  
+				<ul> 
+					 <li>
+					The market for wind energy in Pakistan is expected to record a CAGR of more than 5% in the forecast period 2022-2027.
+				</li>
+				<li>	
+					In terms of market growth, factors such as supportive government policies and efforts to meet power demand using renewables to decrease dependency on fossils are expected to drive the market.
+				</li>
+			    <li>
+					Pakistan currently has a significant dependency on coal-based and natural gas power generation and hydropower, which may lead to fewer investments in other renewable sources of energy, such as wind energy, which constituted about 2% of electricity generation in 2020 and may restrain the wind energy market.
+				</li>
+				</ul>
+			 <br><br><br>
+		<a href="{{url_for('predict')}}"><button type="button" class="myButton" >Want to predict the energy??</button></a>
+		</div>
+		
+		
+		</div>
+	</body>
+</html>
